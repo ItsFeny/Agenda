@@ -1,0 +1,39 @@
+<div class="header">
+    <img src="./../assets/notebook.png">
+    <label>AGENDA</label>
+    <form [formGroup]="form2" (ngSubmit)="Loggedin()">
+    <input type="text" placeholder="Usuario" formControlName="usuario">
+    <input type="password" placeholder="Contraseña" formControlName="contraseña">
+    <input type="submit" value="Entrar">
+  </form>
+</div>
+  
+  <div class="article">
+     <h1>Contacta a tus Compañeros</h1>
+     <img src="./../assets/telefono-contactos-apps.jpg">
+     <p>La mejor manera de contactar a tus Compañeros en esta red social la cual vas a conecer
+        muchas personas y encontraras seres queridos de tu entorno aprovecha el momento para 
+        enviarles solicitud de amistad y poder compartir con ellos todo lo que puedas, registrate
+        y logeate para que tengas un perfil con el cual interactuar. </p>
+  </div>
+  
+  <div class="register">
+    <form [formGroup]="form" (ngSubmit)="Register()">
+      <h1 style="text-align: center;">Registro:</h1>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Usuario:</label>
+        <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ej: Feny">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Correo:</label>
+        <input type="text" formControlName="correo" class="form-control" id="exampleInputPassword1" placeholder="Ej: fenymartinez459@gmail.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" >Contraseña:</label>
+        <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" placeholder="Ej: 12345678">
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="submit">Registrar</button>
+      </div>
+    </form>
+  </div>
